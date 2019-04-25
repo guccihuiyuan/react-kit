@@ -1,0 +1,34 @@
+{
+  "name": "react-kit",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "webpack --progress"
+  },
+  "private": true,
+  "dependencies": {
+    "@react-kit/http": "^0.2.0",
+    "@types/qs": "^6.5.1",
+    "axios": "^0.18.0",
+    "qs": "^6.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/polyfill": "^7.2.3",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@babel/runtime": "^7.2.0",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^2.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.1",
+    "typescript": "^3.2.2",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

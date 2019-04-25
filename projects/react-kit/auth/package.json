@@ -1,0 +1,16 @@
+{
+  "name": "@react-kit/auth",
+  "version": "0.2.0",
+  "author": "Yang",
+  "main": "dist/react-kit-auth.js",
+  "files": [
+    "dist",
+    "typings",
+    "public_api.d.ts",
+    "react-kit-auth.d.ts"
+  ],
+  "peerDependencies": {
+    "@react-kit/http": "^0.2.0"
+  },
+  "typings": "react-kit-auth.d.ts"
+}
