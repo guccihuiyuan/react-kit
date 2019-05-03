@@ -1,6 +1,6 @@
 {
   "name": "@react-kit/auth",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "Yang",
   "main": "dist/react-kit-auth.js",
   "files": [
