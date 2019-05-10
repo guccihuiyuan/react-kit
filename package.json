@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "build": "webpack --progress",
-    "build-all": "npm run build-http-package && npm run build-auth-package",
+    "build-all": "npm run build-http-package && npm run build-auth-package && npm run build-util-package",
     "build-http-package": "cross-env PACKAGE_NAME=http webpack --progress",
-    "build-auth-package": "cross-env PACKAGE_NAME=auth webpack --progress"
+    "build-auth-package": "cross-env PACKAGE_NAME=auth webpack --progress",
+    "build-util-package": "cross-env PACKAGE_NAME=util webpack --progress"
   },
   "private": true,
   "dependencies": {

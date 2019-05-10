@@ -11,7 +11,7 @@ const PACKAGE_NAME = process.env.PACKAGE_NAME;
 
 const webpackConfig = {
     // 模式 "production" | "development" | "none"
-    mode: 'production',
+    mode: 'none',
 
     // 入口
     entry: {
@@ -79,6 +79,15 @@ if (PACKAGE_NAME === 'http') {
     webpackConfig.plugins.push(
         new CleanWebpackPlugin([
             'projects/react-kit/auth/dist'
+        ])
+    );
+} else if(PACKAGE_NAME === 'util') {
+    webpackConfig.entry = {
+        "react-kit-util": './projects/react-kit/util/src/index.ts'
+    };
+    webpackConfig.plugins.push(
+        new CleanWebpackPlugin([
+            'projects/react-kit/util/dist'
         ])
     );
 }
