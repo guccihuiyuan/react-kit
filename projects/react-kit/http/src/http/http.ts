@@ -145,7 +145,7 @@ function handleResponseError(error: any): HttpResponse {
 
   httpResponse.flag = false;
   httpResponse.error = error;
-  httpResponse.message = error.response.statusText;
+  httpResponse.message = error.response ? (error.response.statusText ? error.response.statusText : '') : '';
 
   return httpResponse;
 }
