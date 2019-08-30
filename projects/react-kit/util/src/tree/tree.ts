@@ -117,6 +117,7 @@ export class TreeService {
             }
 
             if ((pid).toString() !== (configs.rootParentId).toString()) {
+                delete item[configs.childrenMapName];
                 childrenOf[pid] = childrenOf[pid] || [];
                 childrenOf[pid].push(item);
             } else {
@@ -181,6 +182,9 @@ export class TreeService {
             }
             if (treeConfig.deepMapName) {
                 configs.deepMapName = treeConfig.deepMapName;
+            }
+            if (treeConfig.cb) {
+                configs.cb = treeConfig.cb;
             }
         }
 

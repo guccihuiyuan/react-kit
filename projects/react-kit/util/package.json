@@ -1,6 +1,6 @@
 {
   "name": "@react-kit/util",
-  "version": "0.5.0",
+  "version": "0.5.2",
   "author": "Yang",
   "main": "dist/react-kit-util.js",
   "files": [
