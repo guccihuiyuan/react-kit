@@ -117,13 +117,18 @@ export class TreeService {
             }
 
             if ((pid).toString() !== (configs.rootParentId).toString()) {
-                delete item[configs.childrenMapName];
                 childrenOf[pid] = childrenOf[pid] || [];
                 childrenOf[pid].push(item);
             } else {
                 tree.push(item);
             }
         }
+        // 去掉空children
+        this.visitTree(tree, (v) => {
+            if(!v[configs.childrenMapName] || v[configs.childrenMapName].length === 0) {
+                delete v[configs.childrenMapName];
+            }
+        });
         return tree;
     }
 
