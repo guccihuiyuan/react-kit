@@ -11,7 +11,7 @@ httpInstance.interceptors.request.use((config => {
     if (config.headers['Content-Type'].indexOf('application/x-www-form-urlencoded') !== -1) {
       // 拿到 body 数据
       const body = config.data;
-      if (!body.hasOwnProperty('REACT_KIT_NO_PARSE_FORM_BODY')) {// 默认序列化
+      if (body && !body.hasOwnProperty('REACT_KIT_NO_PARSE_FORM_BODY')) {// 默认序列化
         config.data = stringify(body);
       } else {
         // 删除 REACT_KIT_NO_PARSE_FORM_BODY
