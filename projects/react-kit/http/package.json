@@ -1,6 +1,6 @@
 {
   "name": "@react-kit/http",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "author": "Yang",
   "main": "dist/react-kit-http.js",
   "files": [

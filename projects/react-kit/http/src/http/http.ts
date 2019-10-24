@@ -8,7 +8,7 @@ const httpInstance: AxiosInstance = axios.create();
 // 请求拦截器 越在后面，越先执行
 httpInstance.interceptors.request.use((config => {
   if (config.method === 'post' || config.method === 'put') {// 如果是 post 或者 put
-    if (config.headers['Content-Type'].indexOf('application/x-www-form-urlencoded') !== -1) {
+    if (config.headers && config.headers['Content-Type'] && config.headers['Content-Type'].indexOf('application/x-www-form-urlencoded') !== -1) {
       // 拿到 body 数据
       const body = config.data;
       if (body && !body.hasOwnProperty('REACT_KIT_NO_PARSE_FORM_BODY')) {// 默认序列化
