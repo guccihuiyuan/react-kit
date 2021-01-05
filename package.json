@@ -12,7 +12,7 @@
   "dependencies": {
     "@react-kit/http": "^0.2.0",
     "@types/qs": "^6.5.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "qs": "^6.6.0"
   },
   "devDependencies": {
